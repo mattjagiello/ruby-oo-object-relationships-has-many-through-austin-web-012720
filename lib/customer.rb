@@ -21,7 +21,8 @@ class Customer
   end
 
   def waiters
-    total_meals Meal.all.select {|x| x.customer == self}
+    total_meals = Meal.all.select {|x| x.customer == self}
+    p total_meals
   end
 
 end
