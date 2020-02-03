@@ -17,7 +17,7 @@ class Customer
   end
 
   def meals
-    Meal.all.map {|x| x.customer == self}
+    p Meal.all.each {|x| x.customer == self}
   end
 
 end
