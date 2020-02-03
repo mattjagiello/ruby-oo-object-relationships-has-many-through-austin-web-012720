@@ -8,8 +8,8 @@ class Waiter
     @@all << self
   end
 
-  def new_meal(waiter, customer, total)
-    Meal.new(self, customer, total)
+  def new_meal(customer, total, tip)
+    Meal.new(self, customer, total, tip)
   end
 
   def self.all
