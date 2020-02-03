@@ -18,6 +18,7 @@ class Waiter
 
   def best_tipper
     all_meals = Meal.all.map
+    p all_meals
   end
 
   def self.all
