@@ -17,7 +17,7 @@ class Waiter
   end
 
   def best_tipper
-    p all_meals = Meal.all.map
+    all_meals = Meal.all.map
     all_meals.max_by{|x| x.total}
     all_meals.customer
   end
