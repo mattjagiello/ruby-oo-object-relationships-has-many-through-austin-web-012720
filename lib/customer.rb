@@ -22,7 +22,7 @@ class Customer
 
   def waiters
     total_meals = Meal.all.select {|x| x.customer == self}
-    total_meals.each {|x| x.waiter == self}
+    total_meals.each {|x| x.waiter}
   end
 
 end
