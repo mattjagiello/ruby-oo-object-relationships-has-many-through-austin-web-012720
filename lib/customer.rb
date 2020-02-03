@@ -20,4 +20,8 @@ class Customer
     Meal.all.select {|x| x.customer == self}
   end
 
+  def waiters
+    Meal.all.select {|x| x.waiter == self}
+  end
+
 end
