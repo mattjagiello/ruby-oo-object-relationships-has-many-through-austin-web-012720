@@ -18,7 +18,7 @@ class Waiter
 
   def best_tipper
     all_meals = Meal.all.map
-    p all_meals.max{|a, b| a.tip <=> b.tip}
+    p all_meals.max_by{|x| x.tip}
   end
 
   def self.all
