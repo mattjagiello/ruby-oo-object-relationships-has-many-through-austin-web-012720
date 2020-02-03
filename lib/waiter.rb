@@ -4,7 +4,7 @@ class Waiter
 
   def initialize(name, exp)
     @name = name
-    @age = age
+    @exp = exp
   end
 
   def self.all
