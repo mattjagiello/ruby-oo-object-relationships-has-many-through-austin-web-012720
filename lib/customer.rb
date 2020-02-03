@@ -17,7 +17,7 @@ class Customer
   end
 
   def meals
-
+    Meal.all.each {|x| x.customer == self}
   end
 
 end
