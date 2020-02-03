@@ -9,7 +9,7 @@ class Waiter
   end
 
   def new_meal(waiter, customer, total)
-    Meal.new(self, customer, total )
+    Meal.new(self, customer, total)
   end
 
   def self.all
