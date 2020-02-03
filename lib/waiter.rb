@@ -13,7 +13,7 @@ class Waiter
   end
 
   def meals
-    Meal.all.map{|x| x.waiter}
+    Meal.all.map{|x| x.waiter == self}
   end
 
   def self.all
